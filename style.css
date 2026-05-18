@@ -169,31 +169,36 @@ main {
 .inst-link {
   text-decoration: none;
   font-weight: 500;
-  display: inline;
+  display: inline-flex;
+  align-items: baseline;
   white-space: nowrap;
+  padding: 0px 3px;
+  border-radius: 3px;
 }
 
 .inst-link:hover {
   text-decoration: underline;
 }
 
+.inst-link.jhu { color: #002D72; background-color: rgba(0, 45, 114, 0.06); }
+.inst-link.jhu:hover { color: #001a45; background-color: rgba(0, 45, 114, 0.1); }
+.inst-link.cmu { color: #AB1727; background-color: rgba(171, 23, 39, 0.06); }
+.inst-link.cmu:hover { color: #8a1220; background-color: rgba(171, 23, 39, 0.1); }
+.inst-link.ntu { color: #B8860B; background-color: rgba(184, 134, 11, 0.08); }
+.inst-link.ntu:hover { color: #8B6508; background-color: rgba(184, 134, 11, 0.12); }
+.inst-link.genentech { color: #1a1a1a; background-color: rgba(0, 0, 0, 0.05); }
+.inst-link.genentech:hover { color: #000000; background-color: rgba(0, 0, 0, 0.08); }
+.inst-link.tailabs { color: #1A73E8; background-color: rgba(26, 115, 232, 0.06); }
+.inst-link.tailabs:hover { color: #1260c4; background-color: rgba(26, 115, 232, 0.1); }
+
 .inst-icon {
-  width: 20px;
-  height: 20px;
-  vertical-align: text-bottom;
+  width: 18px;
+  height: 18px;
+  align-self: center;
   margin-right: 4px;
+  object-fit: contain;
 }
 
-.inst-link.jhu { color: #002D72; }
-.inst-link.jhu:hover { color: #001a45; }
-.inst-link.cmu { color: #AB1727; }
-.inst-link.cmu:hover { color: #8a1220; }
-.inst-link.ntu { color: #221714; }
-.inst-link.ntu:hover { color: #000000; }
-.inst-link.genentech { color: #005596; }
-.inst-link.genentech:hover { color: #003d6b; }
-.inst-link.tailabs { color: #1A73E8; }
-.inst-link.tailabs:hover { color: #1260c4; }
 
 /* Experience page */
 .section-heading {
