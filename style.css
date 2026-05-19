@@ -190,6 +190,8 @@ main {
 .inst-link.genentech:hover { color: #000000; background-color: rgba(0, 0, 0, 0.08); }
 .inst-link.tailabs { color: #1A73E8; background-color: rgba(26, 115, 232, 0.06); }
 .inst-link.tailabs:hover { color: #1260c4; background-color: rgba(26, 115, 232, 0.1); }
+.inst-link.missmi { color: #C2650E; background-color: rgba(194, 101, 14, 0.06); }
+.inst-link.missmi:hover { color: #A0530B; background-color: rgba(194, 101, 14, 0.1); }
 
 .inst-icon {
   width: 18px;
@@ -227,9 +229,9 @@ main {
   border-left: 2px solid var(--border);
 }
 
-.exp-header {
+.exp-row {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
   gap: 0.5rem;
 }
@@ -238,17 +240,23 @@ main {
   font-weight: 600;
 }
 
-.exp-date {
-  font-size: 0.8rem;
+.exp-location {
+  font-size: 0.85rem;
   color: var(--text-secondary);
   white-space: nowrap;
+  text-align: right;
+}
+
+.exp-date {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  text-align: right;
 }
 
 .exp-role {
-  display: block;
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   color: var(--text-secondary);
-  margin-top: 0.15rem;
 }
 
 .exp-desc {
@@ -256,6 +264,18 @@ main {
   color: var(--text-secondary);
   margin-top: 0.35rem;
   line-height: 1.55;
+}
+
+.exp-awards {
+  margin-top: 0.4rem;
+  padding-left: 1.2rem;
+  font-size: 0.85rem;
+  color: var(--text);
+  line-height: 1.55;
+}
+
+.exp-awards .text-secondary {
+  color: var(--text-secondary);
 }
 
 /* Publications page */
