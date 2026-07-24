@@ -1,9 +1,7 @@
 # About
 
-Edit this file to manage your about page. Run `node build.js` to regenerate index.html.
-
 ## Name
-Hong-Sheng Lai
+Hong-Sheng Lai 
 
 ## Subtitle
 Incoming CS PhD @ Johns Hopkins University
@@ -16,10 +14,6 @@ I hold an MS in Computational Biology from Carnegie Mellon University, where I w
 
 Previously, I worked at Genentech as a Computational Biology Intern, Taiwan AI Labs as a Machine Learning Engineer Intern, and Missmi Intelligence as a Part-time Software Engineer.
 
-## Industry Experience
-- Computational Biology Intern at Genentech (Gene and Cell Therapy): Built a cross-platform AI-assisted GUI for NGS nucleic acid integrity , impurity analysis pipelines for QC. Also developed an agentic technical report generation tool for scientists.
-- Machine Learning Engineer Intern at Taiwan AI Labs: Worked on contrastive learning and sequence search with genomic language models, and clinical annotation for pharmacogenomics.
-- Software Engineer (Part-time) at Missmi Intelligence: Built gene reporting products from WGS, WES, and targeted sequencing secondary analysis, collaborating with doctors on clinical action plans.
 
 ## Social Links
 - email: jl900613@gmail.com
@@ -28,7 +22,7 @@ Previously, I worked at Genentech as a Computational Biology Intern, Taiwan AI L
 - linkedin: https://www.linkedin.com/in/hongsheng-lai
 
 ## CV
-Resume_hongsheng.pdf
+HongShengLai_Resume.pdf
 
 ## Photo
 assets/img/prof_pic.jpg

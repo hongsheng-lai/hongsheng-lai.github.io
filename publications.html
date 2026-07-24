@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,6 +9,7 @@
       content="Publications by Hong-Sheng Lai in computational genomics, bioinformatics, and AI."
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="theme.js"></script>
   </head>
   <body>
     <nav>
@@ -16,49 +17,49 @@
         <a href="index.html" class="nav-name">Hong-Sheng Lai</a>
         <div class="nav-links">
           <a href="index.html">About</a>
-          <a href="experience.html">Experience</a>
           <a href="publications.html" class="active">Publications</a>
-          <a href="Resume_hongsheng.pdf" target="_blank">CV</a>
+          <a href="HongShengLai_Resume.pdf" target="_blank">Resume</a>
+          <button id="theme-toggle" aria-label="Toggle dark mode"></button>
         </div>
       </div>
     </nav>
 
     <main>
-        <h1 class="page-title">Publications</h1>
+      <h1 class="page-title">Publications</h1>
 
-        <ul class="pub-list">
-          <li class="pub-item">
-            <span class="pub-badge conference">Conference Paper</span>
-            <span class="pub-title">ARCADE: Controllable Codon Design from Foundation Models via Activation Engineering</span>
-            <span class="pub-authors">Jiayi Li, <strong>Hong-Sheng Lai</strong>, Litian Liang, Shiyi Du, Shijie Tang, Carl Kingsford</span>
-            <span class="pub-venue">ISMB - MLCSB 2026 <a href="https://doi.org/10.1101/2025.08.19.668819" target="_blank">bioRxiv</a></span>
-          </li>
+      <ul class="pub-list">
+        <li class="pub-item">
+          <span class="pub-badge conference">Conference Paper</span>
+          <span class="pub-title">ARCADE: Controllable Codon Design from Foundation Models via Activation Engineering</span>
+          <span class="pub-authors">Jiayi Li, <strong>Hong-Sheng Lai</strong>, Litian Liang<span class="authors-ellipsis">...</span><span class="authors-hidden">, Shiyi Du, Shijie Tang, Carl Kingsford <span class="authors-collapse">[-]</span></span></span>
+          <span class="pub-venue">ISMB - MLCSB 2026 <a href="https://doi.org/10.1101/2025.08.19.668819" target="_blank">bioRxiv</a></span>
+        </li>
 
-          <li class="pub-item">
-            <span class="pub-badge preprint">Preprint</span>
-            <span class="pub-title">TypeAssembly: Copy number estimation and allele typing for haplotype assemblies</span>
-            <span class="pub-authors"><strong>Hong-Sheng Lai</strong>, Yu-Shi Liu, Hsien-Chun Chiu<span class="authors-ellipsis">...</span><span class="authors-hidden">, Ting-Yu Chang, Hsin-Fu Lin, Yi-Hsuan Tseng, Tsung-Kai Hung, Sheng-Kai Lai, Jacob Shujui Hsu, Chia-Lang Hsu, Yu-Chien Yang, Chien-Yu Chen <span class="authors-collapse">[-]</span></span></span>
-            <span class="pub-venue">bioRxiv 2025 <a href="https://doi.org/10.1101/2025.09.13.675996" target="_blank">bioRxiv</a></span>
-          </li>
+        <li class="pub-item">
+          <span class="pub-badge preprint">Preprint</span>
+          <span class="pub-title">TypeAssembly: Copy number estimation and allele typing for haplotype assemblies</span>
+          <span class="pub-authors"><strong>Hong-Sheng Lai</strong>, Yu-Shi Liu, Hsien-Chun Chiu<span class="authors-ellipsis">...</span><span class="authors-hidden">, Ting-Yu Chang, Hsin-Fu Lin, Yi-Hsuan Tseng, Tsung-Kai Hung, Sheng-Kai Lai, Jacob Shujui Hsu, Chia-Lang Hsu, Yu-Chien Yang, Chien-Yu Chen <span class="authors-collapse">[-]</span></span></span>
+          <span class="pub-venue">bioRxiv 2025 <a href="https://doi.org/10.1101/2025.09.13.675996" target="_blank">bioRxiv</a></span>
+        </li>
 
-          <li class="pub-item">
-            <span class="pub-badge preprint">Preprint</span>
-            <span class="pub-title">deCYPher: Star Allele-Resolution Computational Framework of Pharmacogenes for Haplotype-Resolved Long-Read Assemblies</span>
-            <span class="pub-authors">Ting-Yu Chang, Yu-Shi Liu, <strong>Hong-Sheng Lai</strong><span class="authors-ellipsis">...</span><span class="authors-hidden">, Tsung-Kai Hung, Hsin-Fu Lin, Yi-Hsuan Lin, Chia-Lang Hsu, Yu-Chien Yang, Chien-Yu Chen <span class="authors-collapse">[-]</span></span></span>
-            <span class="pub-venue">bioRxiv 2025 <a href="https://doi.org/10.1101/2025.10.13.681303" target="_blank">bioRxiv</a></span>
-          </li>
+        <li class="pub-item">
+          <span class="pub-badge preprint">Preprint</span>
+          <span class="pub-title">deCYPher: Star Allele-Resolution Computational Framework of Pharmacogenes for Haplotype-Resolved Long-Read Assemblies</span>
+          <span class="pub-authors">Ting-Yu Chang, Yu-Shi Liu, <strong>Hong-Sheng Lai</strong><span class="authors-ellipsis">...</span><span class="authors-hidden">, Tsung-Kai Hung, Hsin-Fu Lin, Yi-Hsuan Lin, Chia-Lang Hsu, Yu-Chien Yang, Chien-Yu Chen <span class="authors-collapse">[-]</span></span></span>
+          <span class="pub-venue">bioRxiv 2025 <a href="https://doi.org/10.1101/2025.10.13.681303" target="_blank">bioRxiv</a></span>
+        </li>
 
-          <li class="pub-item">
-            <span class="pub-badge conference">Conference Paper</span>
-            <span class="pub-title">Evaluating the performance of protein structure prediction in detecting structural changes of pathogenic nonsynonymous single nucleotide variants</span>
-            <span class="pub-authors"><strong>Hong-Sheng Lai</strong>, Chien-Yu Chen</span>
-            <span class="pub-venue">BIOINFORMATICS 2024 <a href="https://doi.org/10.1101/2023.11.25.568523" target="_blank">bioRxiv</a></span>
-          </li>
-        </ul>
+        <li class="pub-item">
+          <span class="pub-badge conference">Conference Paper</span>
+          <span class="pub-title">Evaluating the performance of protein structure prediction in detecting structural changes of pathogenic nonsynonymous single nucleotide variants</span>
+          <span class="pub-authors"><strong>Hong-Sheng Lai</strong>, Chien-Yu Chen</span>
+          <span class="pub-venue">BIOINFORMATICS 2024 <a href="https://doi.org/10.1101/2023.11.25.568523" target="_blank">bioRxiv</a></span>
+        </li>
+      </ul>
     </main>
 
     <footer>
-      <p>Last Updated: May 2026</p>
+      <p>&copy; 2025 Hong-Sheng Lai</p>
     </footer>
     <script>
       document.querySelectorAll(".authors-ellipsis").forEach(function (el) {

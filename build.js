@@ -68,7 +68,7 @@ const html = `<!doctype html>
         <div class="nav-links">
           <a href="index.html">About</a>
           <a href="publications.html" class="active">Publications</a>
-          <a href="Resume_hongsheng.pdf" target="_blank">CV</a>
+          <a href="HongShengLai_Resume.pdf" target="_blank">Resume</a>
           <button id="theme-toggle" aria-label="Toggle dark mode"></button>
         </div>
       </div>

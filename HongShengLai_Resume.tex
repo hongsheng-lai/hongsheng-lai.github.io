@@ -1,0 +1,161 @@
+%-------------------------
+% ATS-Friendly Resume Template
+% Mimics Hong-Sheng Lai's resume style
+% Compile with: pdflatex resume_template.tex
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[top=0.4in,bottom=0.4in,left=0.4in,right=0.4in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+% ATS-friendly hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue!70!black,
+    pdfauthor={Hong-Sheng Lai},
+    pdftitle={Resume - Hong-Sheng Lai},
+}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Section formatting: bold title with horizontal rule
+\titleformat{\section}
+  {\large\bfseries}
+  {}
+  {0em}
+  {}
+  [\vspace{-0.75em}\rule{\textwidth}{0.4pt}]
+
+\titlespacing*{\section}{0pt}{0.5em}{0.2em}
+
+% Tighter list spacing
+\setlist[itemize]{
+  leftmargin=1.2em,
+  itemsep=0pt,
+  parsep=0pt,
+  topsep=1pt,
+  partopsep=0pt,
+}
+
+% No paragraph indent, ragged right to avoid word hyphenation
+\setlength{\parindent}{0pt}
+\raggedright
+
+% --- Custom commands ---
+
+% Entry header: {Left title}{Right location}
+%               {Left subtitle}{Right date}
+\newcommand{\entry}[4]{%
+  \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1} & #2 \\
+    #3 & #4 \\
+  \end{tabular*}
+}
+
+% Project entry: {Title}{Venue/Affiliation}{Date}
+\newcommand{\projectentry}[3]{%
+  \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1} & \\
+    #2 & #3 \\
+  \end{tabular*}
+}
+
+% Paper entry: {Title}{Citation line (authors, venue, year, link)}
+\newcommand{\paperentry}[2]{%
+  \textbf{#1}\\[1pt]
+  #2
+}
+
+%-------------------------
+% DOCUMENT START
+%-------------------------
+\begin{document}
+
+%----------NAME----------
+\begin{center}
+  {\LARGE\bfseries Hong-Sheng Lai}\\[2pt]
+  +1(253)261-8683 \,$|$\,
+  \href{https://github.com/hongsheng-lai}{github.com/hongsheng-lai} \,$|$\,
+  \href{mailto:jl900613@gmail.com}{jl900613@gmail.com} \,$|$\,
+  \href{https://www.linkedin.com/in/hongsheng-lai}{www.linkedin.com/in/hongsheng-lai}
+\end{center}
+
+%----------EDUCATION----------
+\section{Education}
+
+\entry
+  {Johns Hopkins University}{Baltimore, MD}
+  {PhD in Computer Science \textit{(advised by Dr.\ Steven Salzberg \& Dr.\ Mihaela Pertea)}}{Aug 2026 -- Present}
+\entry
+  {Carnegie Mellon University}{Pittsburgh, PA}
+  {MS in Computational Biology \textit{(advised by Dr.\ Carl Kingsford)}}{Aug 2024 -- Dec 2025}
+\entry
+  {National Taiwan University}{Taipei, Taiwan}
+  {BS in Biomechatronics Engineering, Minor in Economics \textit{(advised by Dr.\ Chien-Yu Chen)}}{Sep 2019 -- Jun 2023}
+
+%----------SKILLS----------
+\section{Skills}
+\begin{itemize}
+  \item \textbf{Programming Languages:} Python, C++, Java, SQL, R, LaTeX
+  \item \textbf{MLOps \& Framework:} PyTorch, JAX, Grafana, Wandb
+  \item \textbf{Developer Tools:} Git, Linux, Docker, Slurm, Kubernetes, CI/CD, MySQL, MongoDB, Apache Airflow
+\end{itemize}
+
+%----------EXPERIENCE----------
+\section{Work Experience}
+
+\entry
+  {Genentech}{South San Francisco, CA}
+  {Computational Biology Intern}{Jan 2026 -- Jul 2026}
+\begin{itemize}
+  \item Implemented a local \textbf{agentic AI} assistant using \textbf{LangGraph (ReAct)}, \textbf{LangChain}, and \textbf{Ollama} to let scientists configure sequencing analysis pipelines via natural language, featuring structured tool use with \textbf{Pydantic} schemas, real-time GUI control via a socket bridge, and on-premises inference for data privacy.
+  \item Designed \textbf{Claude Code} skills for automating scientific document generation across 10 life-science domains, using structured prompt pipelines with multi-step citation verification (Crossref API), template-driven output, and built-in compliance checks.
+  \item Developed \textbf{NGS} quality control pipelines for \textbf{cell therapy} materials in \textbf{long-read sequencing}, automating consensus generation, variant interpretation, and impurity inference, with results rendered in HTML/PDF templates.
+\end{itemize}
+
+\vspace{2pt}
+\entry
+  {Taiwan AI Labs}{Taipei, Taiwan}
+  {Machine Learning Engineer Intern}{Jul 2023 -- Jan 2024}
+\begin{itemize}
+  \item Enabled sequence-function similarity search in \textbf{Qdrant vector database} with \textbf{contrastive learning} and \textbf{genomic language models}.
+  \item Accelerated sparse matrix regression models with \textbf{JAX} for \textbf{federated analysis}.
+  \item Established an end-to-end clinical annotation pipeline for \textbf{pharmacogenomics}-based drug usage recommendations.
+\end{itemize}
+
+\vspace{2pt}
+\entry
+  {Missmi Intelligence}{Taipei, Taiwan}
+  {Software Engineer}{Jun 2021 -- Jun 2023}
+\begin{itemize}
+  \item Built and launched an NGS gene reporting product, collaborating with medical experts on action plan suggestions; over 400 units sold.
+  \item Automated PDF report generation by integrating secondary analysis results into HTML templates, orchestrated with \textbf{Apache Airflow}.
+\end{itemize}
+
+\section{Projects}
+
+\paperentry
+  {ARCADE: Controllable Codon Design from Foundation Models via Activation Engineering}
+  {\textit{ISMB -- MLCSB}, 2026. \href{https://www.biorxiv.org/content/10.1101/2025.08.19.668819v2}{[Paper]}}
+\begin{itemize}
+  \item Engineered a controllable codon design model by applying \textbf{activation engineering} techniques to both \textbf{decoder-only} and \textbf{encoder-decoder language models} to achieve \textbf{multi-objective optimization}.
+\end{itemize}
+
+\vspace{2pt}
+\paperentry
+  {Alignment-Based Copy Number Estimation and Allele Typing in Complex Genes}
+  {\textit{In submission}. \href{https://www.biorxiv.org/content/10.1101/2025.09.13.675996v1}{[TypeAssembly]} \href{https://www.biorxiv.org/content/10.1101/2025.10.13.681303v2}{[deCYPher]}}
+\begin{itemize}
+  \item Developed \textbf{local alignment} algorithms for \textbf{copy number estimation} and \textbf{star-allele typing} in structurally complex gene regions (pharmacogenes, KIR, HLA) from haplotype-resolved \textbf{long-read assemblies}.
+\end{itemize}
+
+\end{document}
