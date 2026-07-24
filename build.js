@@ -49,7 +49,7 @@ const pubItems = entries
   .join("\n\n");
 
 const html = `<!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -59,21 +59,9 @@ const html = `<!doctype html>
       content="Publications by Hong-Sheng Lai in computational genomics, bioinformatics, and AI."
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="theme.js"></script>
   </head>
   <body>
-    <nav>
-      <div class="nav-container">
-        <a href="index.html" class="nav-name">Hong-Sheng Lai</a>
-        <div class="nav-links">
-          <a href="index.html">About</a>
-          <a href="experience.html">Experience</a>
-          <a href="publications.html" class="active">Publications</a>
-          <a href="HongShengLai_Resume.pdf" target="_blank">Resume</a>
-          <button id="theme-toggle" aria-label="Toggle dark mode"></button>
-        </div>
-      </div>
-    </nav>
+    <script src="nav.js"></script>
 
     <main>
       <h1 class="page-title">Publications</h1>
